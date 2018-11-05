@@ -158,11 +158,15 @@ img {
     clear: both;
 } 
 
-/*===================================
-            MEDIA QUERIES
-=====================================*/
 
-/****** MEDIA QUERY FOR TABLETS ******/
+/*==============================================
+                MEDIA QUERIES
+==============================================*/
+
+/***********************************************
+   MEDIA QUERY FOR TABLETS {min-width: 768px}
+ 
+ **********************************************/
 @media screen and (min-width: 768px) {
 
     /*********** header ****************/ 
@@ -222,6 +226,8 @@ img {
     /******    FOOTER  *************/
     .footer-unorderlist-forLargeScreens {
         display: block;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .footer-nav__listItem {
         display: inline-block;
@@ -238,5 +244,37 @@ img {
     }
     .footer-nav {
         float: right;
+    }
+}
+
+/*********************************************
+
+ Media Query for Desktop {min-width: 1024px} 
+
+**********************************************/
+@media screen and (min-width: 1024px) {
+
+    /*********    Main      ***********/
+    .main-unorderedPortfolioList__item {
+        display: inline-block;
+        max-width: 30%;
+        
+    }
+    .main-unorderedPortfolioList__item {
+        margin-right: 5px;
+    }
+    body {
+        max-width: 1030px;
+    }
+    .main {
+        background-color: white;
+    }
+    .main__heading {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+    .main-contactinfo__summary {
+        max-width: 60%;
     }
 }
