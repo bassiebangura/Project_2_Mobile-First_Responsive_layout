@@ -1,9 +1,11 @@
 /* Global Layout Set-up */
 * { 
     box-sizing: border-box;
+   /* border: 1px solid red; */ 
   }
 body {
     margin: 0 auto 0;
+    background-color: hsl(209, 80%, 99%);
 }
 
 li {
@@ -30,31 +32,36 @@ a {
 
 .header__name {
     margin: 0 auto 0;
-    padding: 0.5px;
-    background-color: hsl(209, 83%, 30%);
-    color: #eee;
+    font-size: 1.65em;
+    padding: 3.5px;
+    background-color: hsl(209, 83%, 70%);
+    color: #444;
+    border-bottom: 0.8px solid hsl(209, 89%, 60%);;
 }
 
-.header-main-nav {
-    margin-bottom: 10px;
-}
+/* .header__profile {
+    margin-top: 5px;
+} */
 
-
+/* .header-main-nav {
+    margin-bottom: 20px;
+} */
 
 .header-main-nav__unorderedList {
     margin: 0 auto 0;
 }
 
-
-.header-main-nav__listItem{
-    background-color: #eee;
-    padding: 1.9px;
-    border: 0.5px solid #fff;
-    border-radius: 3px;
-}
-
 .header-main-nav__listItem a {
     color: hsl(209, 83%, 30%);
+}
+
+.header__profile {
+    background-color: #eee;
+    padding-top: 15px;
+}
+
+.header__profileImage {
+    max-width: 95%;
 }
 
 .header__profileSummary {
@@ -63,24 +70,173 @@ a {
     text-align: justify;
 }
 
+/*********** Main **************/
+.main {
+    text-align: center;
+    color: #333;
+}
+.main__heading {
+    color: hsl(209, 83%, 30%);
+}
+
+.main-portfolioproject {
+    background-color: hsl(209, 88%, 99%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-porfolioproject__image {
+    margin: 4px auto 4px;
+    max-width: 95%;
+}
+
+.main-porfolioproject__name, .main-contactinfo__heading {
+    color: hsl(209, 70%, 55%);
+    margin:6px auto 6px;
+    padding: 2px;
+}
+.main-porfolioproject__summary, .main-contactinfo__summary {
+    padding: 2% 5% 2%;
+    color: #333;
+    text-align: justify;
+    margin:6px auto 16px;
+}
+.main-contactinfo {
+    background-color: #efefef;
+    padding-top: 10px;
+}
+
+.main-contactinfo__emailaddressNphonenumberWrapper {
+    text-align: center;
+}
+
+.main-contactinfo__phonenumber, .main-contactinfo__emailaddress {
+    margin: 1px auto 4px;
+}
+.main-contactinfo__emailaddress {
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-top: 5px;
+}
+.main-contactinfo__phonenumber  {
+    margin-bottom: 2px;
+}
+
 img {
     max-width: 100%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/********** Footer **********/
+.footer-unorderlist-forLargeScreens {
+    display: none;
+}
+.footer {
+    text-align: center;
+    background-color: hsl(209, 88%, 70%);
+    padding: 10px;
+    border-top: 1px solid hsl(209, 90%, 60%);
+}
+.footer-unorderlist {
+    margin: 0 auto 0;
+}
 
 .debug {
     border: 1px solid orange;
+}
+
+.footer-unodered__item__studentname   {
+    float: left;
+}
+.footer-unodered__item__linkToTopOfPage {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+/*===================================
+            MEDIA QUERIES
+=====================================*/
+
+/****** MEDIA QUERY FOR TABLETS ******/
+@media screen and (min-width: 768px) {
+
+    /*********** header ****************/ 
+    .header__profile {
+        padding-bottom: 5px;
+        padding-right: 5px;
+        background-color: #dde;
+    }
+
+    .header__name {
+        padding: 5px;
+        font-size: 2.5em;
+    }
+    .header-main-nav__unorderedList {
+        background-color: hsl(209, 90%, 80%);
+    }
+
+    .header-main-nav__listItem {
+        display: inline-block;
+        margin-left: -5px;
+        border-style: none;
+        padding: 10px 15px 10px;
+    }
+
+    .header__profileSummary {
+        float: left;
+        max-width: 60%;
+        margin-top: 0px;
+    }
+
+    .header__profileImage {
+        float: right;
+        max-width: 35%;
+        margin-top: 0;
+    }
+
+    /**********      Main   ************/
+    .main__heading {
+        margin: 1.5em auto 1.5em;
+    }
+
+    .main-unorderedPortfolioList {
+        padding: 10px;
+    }
+    .main-unorderedPortfolioList__item {
+        display: inline-block;
+        max-width: 45%;
+        
+    }
+    .main-unorderedPortfolioList__item {
+        margin-right: 10px;
+    }
+
+    .main-contactinfo__summary {
+        max-width: 85%;
+    }
+    /******    FOOTER  *************/
+    .footer-unorderlist-forLargeScreens {
+        display: block;
+    }
+    .footer-nav__listItem {
+        display: inline-block;
+        padding: 5px;
+    }
+    .footer-unorderlist {
+        display: none;
+    }
+    .footer-nav__unorderedlist {
+        padding: 5px;
+    }
+    .footer-unodered__item__studentname {
+        float: left;
+    }
+    .footer-nav {
+        float: right;
+    }
 }

@@ -8,16 +8,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
 </head>
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <h1 class="header__name">Bassie Bangura</h1>
         <nav class="header-main-nav">
             <ul class="header-main-nav__unorderedList">
-                <li class="header-main-nav__listItem"><a href="#home">HOME</a></li>
-                <li class="header-main-nav__listItem"><a href="#portfolio">PORTFOLIO</a></li>
-                <li class="header-main-nav__listItem"><a href="#contact">HOME</a></li>
+                <li class="header-main-nav__listItem  header-main-nav__listItem-home"><a href="#home">HOME</a></li>
+                <li class="header-main-nav__listItem header-main-nav__listItem-portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="header-main-nav__listItem header-main-nav__listItem-contact"><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-        <section class="header__profile">
+        <section class="header__profile clearfix">
             <img class="header__profileImage" src="images/responsive-layout-profile.png"/>
             <p class="header__profileSummary">
                 Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
@@ -28,83 +28,109 @@
         </section>
     </header>
     <main class="main"><!-- Star:Main -->
+        <h2 id="portfolio" class="main__heading">Portfolio</h2>
         <!-- Start: Portfolio -->
-        <h2 class="main__heading">Portfolio</h2>
-        <section>
-            <img src="images/portfolio-1.png">
-            <h3>Marketing Page</h3>
-            <p>
-                Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
-                At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
-                iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
-                rationibus sit. Graecis omittantur cum in. 
-            </p>
-        </section>
-        <section>
-                <img src="images/portfolio-1.png">
-                <h3>Marketing Page</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
-                    At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
-                    iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
-                    rationibus sit. Graecis omittantur cum in. 
-                </p>
-        </section>
-        <section>
-                <img src="images/portfolio-1.png">
-                <h3>Marketing Page</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
-                    At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
-                    iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
-                    rationibus sit. Graecis omittantur cum in. 
-                </p>
-        </section>
-        <section>
-                <img src="images/portfolio-1.png">
-                <h3>Marketing Page</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
-                    At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
-                    iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
-                    rationibus sit. Graecis omittantur cum in. 
-                </p>
-        </section>
-        <section>
-                <img src="images/portfolio-1.png">
-                <h3>Marketing Page</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
-                    At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
-                    iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
-                    rationibus sit. Graecis omittantur cum in. 
-                </p>
-        </section>
-        <section>
-                <img src="images/portfolio-1.png">
-                <h3>Marketing Page</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
-                    At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
-                    iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
-                    rationibus sit. Graecis omittantur cum in. 
-                </p>
-        </section><!-- End: Portfolio-->
-        <section>
-            <h3>Contact</h3>
-            <p>
+        <ul class="main-unorderedPortfolioList">
+            <li class="main-unorderedPortfolioList__item">
+                <section class="main-porfolioproject">
+                    <img class="main-porfolioproject__image" src="images/portfolio-1.png">
+                    <h3 class="main-porfolioproject__name">Marketing Page</h3>
+                    <p class="main-porfolioproject__summary">
+                        Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
+                        At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
+                        iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
+                        rationibus sit. Graecis omittantur cum in. 
+                    </p>
+                </section>
+            </li>
+            <li class="main-unorderedPortfolioList__item">
+                <section class="main-porfolioproject">
+                    <img class="main-porfolioproject__image" src="images/portfolio-1.png">
+                    <h3 class="main-porfolioproject__name">Marketing Page</h3>
+                    <p class="main-porfolioproject__summary">
+                        Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
+                        At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
+                        iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
+                        rationibus sit. Graecis omittantur cum in. 
+                    </p>
+                </section>
+            </li>
+            <li class="main-unorderedPortfolioList__item">
+                <section class="main-porfolioproject">
+                    <img class="main-porfolioproject__image" src="images/portfolio-1.png">
+                    <h3 class="main-porfolioproject__name">Marketing Page</h3>
+                    <p class="main-porfolioproject__summary">
+                        Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
+                        At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
+                        iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
+                        rationibus sit. Graecis omittantur cum in. 
+                    </p>
+                </section>
+            </li>
+            <li class="main-unorderedPortfolioList__item">
+                <section class="main-porfolioproject">
+                    <img class="main-porfolioproject__image" src="images/portfolio-1.png">
+                    <h3 class="main-porfolioproject__name">Marketing Page</h3>
+                    <p class="main-porfolioproject__summary">
+                        Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
+                        At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
+                        iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
+                        rationibus sit. Graecis omittantur cum in. 
+                    </p>
+                </section>
+            </li>
+            <li class="main-unorderedPortfolioList__item">
+                <section class="main-porfolioproject">
+                    <img class="main-porfolioproject__image" src="images/portfolio-1.png">
+                    <h3 class="main-porfolioproject__name">Marketing Page</h3>
+                    <p class="main-porfolioproject__summary">
+                        Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
+                        At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
+                        iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
+                        rationibus sit. Graecis omittantur cum in. 
+                    </p>
+                </section>
+            </li>
+            <li class="main-unorderedPortfolioList__item">
+                <section class="main-porfolioproject">
+                    <img class="main-porfolioproject__image" src="images/portfolio-1.png">
+                    <h3 class="main-porfolioproject__name">Marketing Page</h3>
+                    <p class="main-porfolioproject__summary">
+                        Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
+                        At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam, 
+                        iusto everti sed ea. Qui ea nostro vituperata, an ferri interesset nec, ad accusam 
+                        rationibus sit. Graecis omittantur cum in. 
+                    </p>
+                </section>
+            </li><!-- End: Portfolio-->
+        </ul>
+        <section id="contact" class="main-contactinfo">
+            <h3 class="main-contactinfo__heading">Contact</h3>
+            <p class="main-contactinfo__summary">
                 Lorem ipsum dolor sit amet, summo suscipit duo ea, nominavi scaevola probatus eam ut. 
                 At odio numquam sensibus nam. Postea doming lucilius no usu, eu debet aliquid eam,  
             </p>
-            <p>Phone <strong>+11110000000</strong></p>
-            <p>Email <strong>gogo@gmail.zzz</strong></p>
+            <div class="main-contactinfo__emailaddressNphonenumberWrapper">
+                <p class="main-contactinfo__phonenumber">Phone: <strong>+11110000000</strong></p>
+                <p class="main-contactinfo__emailaddress">Email: <strong>gogo@gmail.zzz</strong></p>
+            </div>
         </section>
     </main><!-- /main -->
-    <hr>
-    <footer>
-        <ul>
-            <li>Student name</li>
-            <li>BACK TO TOP</li>
+    <footer class="footer">
+        <ul class="footer-unorderlist clearfix">
+            <li class="footer-unodered__item footer-unodered__item__studentname">Bassie Bangura</li>
+            <li class="footer-unodered__item footer-unodered__item__linkToTopOfPage"><a href="#home" >BACK TO TOP</li></a>
+        </ul>
+        <!-- FOOTER DISPLAY FOR LAGRE SCREENS > 768px -->
+        <ul class="footer-unorderlist-forLargeScreens clearfix">
+            <li class="footer-unodered__item footer-unodered__item__studentname">Bassie Bangura</li>
+            <li class="footer-unodered__item footer-nav">
+                <ul class="footer-nav__undorderedlist">
+                    <li class="footer-nav__listItem"><a href="#home">HOME</a></li>
+                    <li class="footer-nav__listItem"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="footer-nav__listItem "><a href="#contact">CONTACT</a></li>
+                </ul>
+            <li>
         </ul>
     </footer>
 </body>
