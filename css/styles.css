@@ -1,0 +1,86 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+body {
+    margin: 0 auto 0;
+}
+
+li {
+    list-style-type: none;
+    margin-left: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/*=================================
+            Base Layouts 
+==================================*/
+
+/*********** Header **************/
+.header {
+    text-align: center;
+    width: 100%;
+}
+
+.header__name {
+    margin: 0 auto 0;
+    padding: 0.5px;
+    background-color: hsl(209, 83%, 30%);
+    color: #eee;
+}
+
+.header-main-nav {
+    margin-bottom: 10px;
+}
+
+
+
+.header-main-nav__unorderedList {
+    margin: 0 auto 0;
+}
+
+
+.header-main-nav__listItem{
+    background-color: #eee;
+    padding: 1.9px;
+    border: 0.5px solid #fff;
+    border-radius: 3px;
+}
+
+.header-main-nav__listItem a {
+    color: hsl(209, 83%, 30%);
+}
+
+.header__profileSummary {
+    padding: 2% 5% 2%;
+    color: #333;
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.debug {
+    border: 1px solid orange;
+}
