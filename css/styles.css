@@ -36,7 +36,7 @@ a {
     padding: 3.5px;
     background-color: hsl(209, 83%, 70%);
     color: #444;
-    border-bottom: 0.8px solid hsl(209, 89%, 60%);;
+    border-bottom: 0.8px solid hsl(209, 89%, 60%);
 }
 
 /* .header__profile {
@@ -252,9 +252,32 @@ img {
  Media Query for Desktop {min-width: 1024px} 
 
 **********************************************/
+
 @media screen and (min-width: 1024px) {
 
+    /*********   Header ****************/
+    .largeScreensContainer {
+        background-color: hsl(209, 83%, 70%);
+        padding: 15px 5px 2px;
+
+    }
+    .header__name {
+        float: left;
+        border: 0;
+        padding-top: 0;
+    }
+
+    .header-main-nav {
+        float: right;
+    }
+
+    .header-main-nav__unorderedList {
+        background-color: hsl(209, 83%, 70%);
+    }
+
+
     /*********    Main      ***********/
+
     .main-unorderedPortfolioList__item {
         display: inline-block;
         max-width: 30%;
@@ -277,4 +300,10 @@ img {
     .main-contactinfo__summary {
         max-width: 60%;
     }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
 }
