@@ -1,7 +1,7 @@
 /* Global Layout Set-up */
 * { 
     box-sizing: border-box;
-   /* border: 1px solid red; */ 
+    /*border: 1px solid red;****used for debugging purposes****/
   }
 body {
     margin: 0 auto 0;
@@ -227,7 +227,8 @@ img {
     }
     .main-unorderedPortfolioList__item {
         display: inline-block;
-        max-width: 45%;
+        max-width: 45%; 
+        vertical-align: top;
         
     }
     .main-unorderedPortfolioList__item {
