@@ -6,6 +6,7 @@
 body {
     margin: 0 auto 0;
     background-color: hsl(209, 80%, 99%);
+    font-family: 'Roboto', sans-seri;
 }
 
 li {
@@ -41,20 +42,12 @@ a:hover {
 .header__name {
     margin: 0 auto 0;
     font-size: 1.1em;
-    padding: 3.5px;
+    padding: 0.65em;
     background-color: hsl(209, 83%, 70%);
     color: #444;
     border-bottom: 0.8px solid hsl(209, 89%, 60%);
     font-family: 'Orbitron', sans-serif;
 }
-
-/* .header__profile {
-    margin-top: 5px;
-} */
-
-/* .header-main-nav {
-    margin-bottom: 20px;
-} */
 
 .header-main-nav__unorderedList {
     margin: 0 auto 0;
@@ -78,14 +71,17 @@ a:hover {
     padding: 2% 5% 2%;
     color: #333;
     text-align: justify;
-    font-size: 1.65rem;
+    font-size: 1.4em;
     font-family: 'Dancing Script', cursive;
+    line-height: 1.5em;
 }
 
 /*********** Main **************/
 .main {
     text-align: center;
     color: #333;
+    line-height: 1.5em;
+
 }
 .main__heading {
     color: hsl(209, 83%, 30%);
