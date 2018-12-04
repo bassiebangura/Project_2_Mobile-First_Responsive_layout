@@ -32,12 +32,12 @@ a {
 
 .header__name {
     margin: 0 auto 0;
-    font-size: 1.65em;
+    font-size: 1.2em;
     padding: 3.5px;
     background-color: hsl(209, 83%, 70%);
     color: #444;
     border-bottom: 0.8px solid hsl(209, 89%, 60%);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* .header__profile {
