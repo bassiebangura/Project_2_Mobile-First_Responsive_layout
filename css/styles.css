@@ -20,6 +20,14 @@ ul {
 a {
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pad-Spacing {
+    padding: 0.29em;
+}
 /*=================================
             Base Layouts 
 ==================================*/
@@ -32,7 +40,7 @@ a {
 
 .header__name {
     margin: 0 auto 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 3.5px;
     background-color: hsl(209, 83%, 70%);
     color: #444;
@@ -50,6 +58,7 @@ a {
 
 .header-main-nav__unorderedList {
     margin: 0 auto 0;
+    padding: 0.5em;
 }
 
 .header-main-nav__listItem a {
@@ -69,7 +78,7 @@ a {
     padding: 2% 5% 2%;
     color: #333;
     text-align: justify;
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -93,12 +102,16 @@ a {
     max-width: 95%;
 }
 
-.main-porfolioproject__name, .main-contactinfo__heading {
+.main-porfolioproject__name,
+.main-contactinfo__heading, 
+.main-skills__heading     {
     color: hsl(209, 70%, 55%);
     margin:6px auto 6px;
     padding: 2px;
 }
-.main-porfolioproject__summary, .main-contactinfo__summary {
+.main-porfolioproject__summary,
+ .main-contactinfo__summary,
+ .main-skills__summary {
     padding: 2% 5% 2%;
     color: #333;
     text-align: justify;
@@ -107,6 +120,7 @@ a {
 .main-contactinfo {
     background-color: #efefef;
     padding-top: 10px;
+    color: blue;
 }
 
 .main-contactinfo__emailaddressNphonenumberWrapper {
@@ -181,10 +195,11 @@ img {
 
     .header__name {
         padding: 5px;
-        font-size: 2.5em;
+        font-size: 1.75em;
     }
     .header-main-nav__unorderedList {
         background-color: hsl(209, 90%, 80%);
+        padding: 0.15em;
     }
 
     .header-main-nav__listItem {
@@ -221,10 +236,16 @@ img {
     }
     .main-unorderedPortfolioList__item {
         margin-right: 10px;
+        padding: .43em;
     }
 
     .main-contactinfo__summary {
         max-width: 85%;
+    }
+
+    .main-skills__ulList {
+        text-align: justify;
+        padding-left: 6%;
     }
     /******    FOOTER  *************/
     .footer-unorderlist-forLargeScreens {
