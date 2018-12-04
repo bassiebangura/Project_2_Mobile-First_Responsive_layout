@@ -37,6 +37,7 @@ a {
     background-color: hsl(209, 83%, 70%);
     color: #444;
     border-bottom: 0.8px solid hsl(209, 89%, 60%);
+    font-family: 'Roboto', sans-serif;
 }
 
 /* .header__profile {
@@ -68,6 +69,8 @@ a {
     padding: 2% 5% 2%;
     color: #333;
     text-align: justify;
+    font-size: 1.75rem;
+    font-family: 'Dancing Script', cursive;
 }
 
 /*********** Main **************/
